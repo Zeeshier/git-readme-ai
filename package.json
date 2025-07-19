@@ -2,7 +2,7 @@
   "name": "gitreadme-ai",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "page.tsx",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
