@@ -2,6 +2,7 @@
   "name": "gitreadme-ai",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,6 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
     "@langchain/core": "^0.3.66",
     "@langchain/groq": "^0.2.3",

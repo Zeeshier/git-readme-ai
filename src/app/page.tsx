@@ -93,7 +93,45 @@ export default function Home() {
       <main className="w-full flex-1 flex flex-col items-center justify-center px-4 pt-16 pb-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-4">GitReadme AI</h1>
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <span aria-label="AI Logo" className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-purple-500 to-pink-400 shadow-md">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="18" fill="url(#ai-logo-gradient)" />
+                <defs>
+                  <linearGradient id="ai-logo-gradient" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#a78bfa" />
+                    <stop offset="1" stopColor="#f472b6" />
+                  </linearGradient>
+                </defs>
+                {/* Generative AI neural/spark motif */}
+                <g stroke="#fff" strokeWidth="1.5" strokeLinecap="round">
+                  <circle cx="18" cy="18" r="7" fill="none" />
+                  <circle cx="18" cy="11" r="1.2" fill="#fff" />
+                  <circle cx="25" cy="18" r="1.2" fill="#fff" />
+                  <circle cx="18" cy="25" r="1.2" fill="#fff" />
+                  <circle cx="11" cy="18" r="1.2" fill="#fff" />
+                  <circle cx="22.5" cy="13.5" r="0.8" fill="#fff" />
+                  <circle cx="22.5" cy="22.5" r="0.8" fill="#fff" />
+                  <circle cx="13.5" cy="22.5" r="0.8" fill="#fff" />
+                  <circle cx="13.5" cy="13.5" r="0.8" fill="#fff" />
+                  <line x1="18" y1="11" x2="22.5" y2="13.5" />
+                  <line x1="18" y1="11" x2="13.5" y2="13.5" />
+                  <line x1="25" y1="18" x2="22.5" y2="13.5" />
+                  <line x1="25" y1="18" x2="22.5" y2="22.5" />
+                  <line x1="18" y1="25" x2="22.5" y2="22.5" />
+                  <line x1="18" y1="25" x2="13.5" y2="22.5" />
+                  <line x1="11" y1="18" x2="13.5" y2="13.5" />
+                  <line x1="11" y1="18" x2="13.5" y2="22.5" />
+                </g>
+                {/* Spark in the center */}
+                <g>
+                  <circle cx="18" cy="18" r="2.1" fill="#fff" opacity="0.9" />
+                  <path d="M18 15.2v-2.2M18 20.8v2.2M20.8 18h2.2M15.2 18h-2.2" stroke="#fff" strokeWidth="1.1" strokeLinecap="round" />
+                </g>
+              </svg>
+            </span>
+            <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight">GitReadme AI</h1>
+          </div>
           <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto font-normal">
             Instantly generate a beautiful, professional README for any GitHub repository.
           </p>
