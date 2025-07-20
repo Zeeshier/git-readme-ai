@@ -9,34 +9,36 @@
 </head>
 <body>
   <div class="background-gradient"></div>
-  <div class="container">
-    <header class="header enhanced-header">
-      <div class="header-text">
-        <h1>GitReadme AI</h1>
-        <p class="subtitle">Instantly generate a beautiful, professional README for any GitHub repository.</p>
-      </div>
-    </header>
-    <main class="main-content">
-      <form id="readme-form" class="glass-card enhanced-form">
+  <div class="neon-main-center">
+    <div class="neon-header">
+      <h1 class="neon-app-name">GitReadme <span>AI</span></h1>
+      <div class="neon-tagline">AI-powered README generator</div>
+    </div>
+    <div class="glass-card neon-generator-card">
+      <form id="readme-form">
         <label for="repo-url" class="input-label">GitHub Repository URL</label>
         <input type="text" id="repo-url" placeholder="Paste a GitHub repo URL (e.g. https://github.com/vercel/next.js)" autocomplete="off" required />
-        <button type="submit" id="generate-btn">Generate README</button>
+        <button type="submit" id="generate-btn" class="btn btn-neon">Generate README</button>
         <div id="error" class="error"></div>
       </form>
-      <section id="result-section" class="result-section" style="display:none;">
-        <div class="glass-card result-card enhanced-result">
-          <div class="result-header">
-            <h2>Generated README</h2>
-            <div class="result-actions">
-              <button id="copy-btn" title="Copy to clipboard">📋</button>
-              <button id="download-btn" title="Download as markdown">⬇️</button>
-            </div>
+    </div>
+    <section id="result-section" class="result-section" style="display:none;">
+      <div class="glass-card neon-result-card">
+        <div class="result-header">
+          <h2>Generated README</h2>
+          <div class="result-actions">
+            <button id="copy-btn" title="Copy to clipboard" aria-label="Copy">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#CFFF3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            </button>
+            <button id="download-btn" title="Download as markdown" aria-label="Download">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#CFFF3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </button>
           </div>
-          <div id="readme-html" class="markdown-preview"></div>
-          <pre id="readme-output" style="display:none;"></pre>
         </div>
-      </section>
-    </main>
+        <div id="readme-html" class="markdown-preview"></div>
+        <pre id="readme-output" style="display:none;"></pre>
+      </div>
+    </section>
     <footer class="footer">
       Built by zeeshier &mdash; <span id="year"></span> GitReadme AI
     </footer>
