@@ -112,4 +112,4 @@ MIT
 
 ---
 
-> Built with ❤️ by zeeshier
+> Built by zeeshier
