@@ -94,39 +94,31 @@ export default function Home() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <span aria-label="AI Logo" className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-purple-500 to-pink-400 shadow-md">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="18" cy="18" r="18" fill="url(#ai-logo-gradient)" />
+            <span aria-label="AI Logo" className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-transparent">
+              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                  <linearGradient id="ai-logo-gradient" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="ai-outline-gradient" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#a78bfa" />
                     <stop offset="1" stopColor="#f472b6" />
                   </linearGradient>
+                  <linearGradient id="ai-text-gradient" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#a78bfa" />
+                    <stop offset="1" stopColor="#f472b6" />
+                  </linearGradient>
+                  <linearGradient id="ai-sparkle-gradient" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#38bdf8" />
+                    <stop offset="1" stopColor="#a78bfa" />
+                  </linearGradient>
                 </defs>
-                {/* Generative AI neural/spark motif */}
-                <g stroke="#fff" strokeWidth="1.5" strokeLinecap="round">
-                  <circle cx="18" cy="18" r="7" fill="none" />
-                  <circle cx="18" cy="11" r="1.2" fill="#fff" />
-                  <circle cx="25" cy="18" r="1.2" fill="#fff" />
-                  <circle cx="18" cy="25" r="1.2" fill="#fff" />
-                  <circle cx="11" cy="18" r="1.2" fill="#fff" />
-                  <circle cx="22.5" cy="13.5" r="0.8" fill="#fff" />
-                  <circle cx="22.5" cy="22.5" r="0.8" fill="#fff" />
-                  <circle cx="13.5" cy="22.5" r="0.8" fill="#fff" />
-                  <circle cx="13.5" cy="13.5" r="0.8" fill="#fff" />
-                  <line x1="18" y1="11" x2="22.5" y2="13.5" />
-                  <line x1="18" y1="11" x2="13.5" y2="13.5" />
-                  <line x1="25" y1="18" x2="22.5" y2="13.5" />
-                  <line x1="25" y1="18" x2="22.5" y2="22.5" />
-                  <line x1="18" y1="25" x2="22.5" y2="22.5" />
-                  <line x1="18" y1="25" x2="13.5" y2="22.5" />
-                  <line x1="11" y1="18" x2="13.5" y2="13.5" />
-                  <line x1="11" y1="18" x2="13.5" y2="22.5" />
-                </g>
-                {/* Spark in the center */}
+                {/* Rounded square outline */}
+                <rect x="4" y="4" width="32" height="32" rx="9" stroke="url(#ai-outline-gradient)" strokeWidth="2.5" fill="none" />
+                {/* Ai text */}
+                <text x="12.5" y="28" fontFamily="Poppins, Montserrat, sans-serif" fontWeight="bold" fontSize="18" fill="url(#ai-text-gradient)">A</text>
+                <text x="25" y="28" fontFamily="Poppins, Montserrat, sans-serif" fontWeight="500" fontSize="18" fill="url(#ai-text-gradient)">i</text>
+                {/* Sparkle/star */}
                 <g>
-                  <circle cx="18" cy="18" r="2.1" fill="#fff" opacity="0.9" />
-                  <path d="M18 15.2v-2.2M18 20.8v2.2M20.8 18h2.2M15.2 18h-2.2" stroke="#fff" strokeWidth="1.1" strokeLinecap="round" />
+                  <path d="M38 10.5c-2.2-.1-3.1-.9-3.2-3.2-.1 2.3-1 3.1-3.2 3.2 2.2.1 3.1.9 3.2 3.2.1-2.3 1-3.1 3.2-3.2z" fill="url(#ai-sparkle-gradient)"/>
+                  <circle cx="36.5" cy="8.5" r="1.1" fill="url(#ai-sparkle-gradient)" />
                 </g>
               </svg>
             </span>
