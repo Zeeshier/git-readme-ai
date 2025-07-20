@@ -79,7 +79,7 @@ Write a concise, enthusiastic description of the project’s purpose, inferred f
 
 
 
-Add relevant Shields.io badges (e.g., license, build status, version, downloads) based on the project’s context.
+Add relevant Shields.io badges (e.g., license, build status, version, downloads, libraries , languages) based on the project’s context.
 
 
 
