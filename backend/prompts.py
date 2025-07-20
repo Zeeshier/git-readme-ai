@@ -163,11 +163,8 @@ Unleash the power of data with MyAwesomeProject, a Python tool for blazing-fast 
 
 ## 📁 Repository Structure
 
-myawesomeproject/ ├── src/ │ ├── main.py │ ├── parser.py ├── tests/ ├── requirements.txt ├── LICENSE.md
+myawesomeproject/ ├── src/ │ ├── main.py / Core application logic │ ├── parser.py / Data parsing module├── tests/ / Unit tests for reliability├── requirements.txt / dependencies ├── LICENSE.md
 
-- `src/main.py`: Core application logic
-- `src/parser.py`: Data parsing module
-- `tests/`: Unit tests for reliability
 
 ## 🌟 Features
 - ✅ Fast CSV parsing with `src/parser.py`
