@@ -20,7 +20,7 @@ You are a veteran open-source documentation expert. Generate a vibrant, professi
 
 📄 README STRUCTURE:
 
-1. **# {repo_name}** — catchy intro, badges, tagline.
+1. **# Repo Name** — catchy intro, badges, languages , frameworks,libraries, tagline.
 2. **Table of Contents** — if multiple sections.
 3. **📁 Repository Structure** — show {file_tree} in a code block; explain key files.
 4. **🌟 Features** — highlight unique capabilities with real examples and emojis.
