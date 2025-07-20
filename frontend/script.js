@@ -50,7 +50,7 @@ form.addEventListener('submit', async function(e) {
   readmeHtml.innerHTML = '';
 
   try {
-    const response = await fetch('http://localhost:8000/generate-readme', {
+    const response = await fetch('https://git-readme-ai-production.up.railway.app/generate-readme', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ repo_url: repoUrl })
