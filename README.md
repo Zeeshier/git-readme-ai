@@ -9,6 +9,12 @@
 
 ---
 
+## 🎬 Demo
+
+<video src="test/demo.mp4" width=500 height=400  controls></video>
+
+---
+
 ## ✨ Features
 
 - **AI-powered README generation** using LangChain and Groq LLMs
